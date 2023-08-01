@@ -1,8 +1,5 @@
 import * as vscode from 'vscode'
 import { SidebarProvider } from './SideBarProvider'
-import { spawn } from 'child_process'
-
-let panel: vscode.WebviewPanel | undefined
 
 export function activate (context: vscode.ExtensionContext) {
   const statusBarItem = vscode.window.createStatusBarItem(
@@ -32,8 +29,7 @@ export function activate (context: vscode.ExtensionContext) {
         terminal.sendText(`npm install ${name}`)
         terminal.show(true)
 
-        terminal.processId.then(pid => {
-          console.log({ pid })
+        terminal.processId.then(() => {
 
           vscode.window
             .showInformationMessage(

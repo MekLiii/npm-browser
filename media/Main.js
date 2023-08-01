@@ -17,7 +17,6 @@
 
     const fetchData = async () => {
       loading = true
-      console.log({ loading })
       root.innerHTML = ''
       const response = await fetch(
         `https://api.npms.io/v2/search?q=${input.value}`

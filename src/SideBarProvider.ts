@@ -1,6 +1,5 @@
 import * as vscode from 'vscode'
 import { getNonce } from './getNonce'
-import * as path from 'path'
 
 export class SidebarProvider implements vscode.WebviewViewProvider {
   _view?: vscode.WebviewView
@@ -19,7 +18,6 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
     webviewView.webview.onDidReceiveMessage(message => {
       switch (message.command) {
         case 'npm-browser.openTerminal':
-          console.log(message.text)
           vscode.commands.executeCommand(
             'npm-browser.openTerminal',
             message.text
