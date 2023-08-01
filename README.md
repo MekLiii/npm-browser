@@ -1,71 +1,30 @@
-# npm-browser README
+# NPM Package Viewer Plugin
 
-This is the README for your extension "npm-browser". After writing up a brief description, we recommend including the following sections.
+![image](https://github.com/MekLiii/npm-browser/assets/72619640/4c3c0253-32b6-4c64-a416-47b77d84f5d1)
+
+
+## Description
+
+The "NPM Package Viewer" plugin is a simple tool that allows browsing NPM (Node Package Manager) packages directly from the GitHub interface. It enables convenient exploration and analysis of npm packages without leaving the GitHub project page.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+1. **Browsing NPM Packages**: The plugin allows browsing a list of all npm packages used in the GitHub project, along with their versions and descriptions.
 
-For example if there is an image subfolder under your extension project workspace:
+2. **Package Search**: Users can easily search for specific packages by entering their names in the search box.
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+3. **Package Installation**: After exploring available packages, users have the option to install a package directly into their project. The plugin automatically manages adding packages to the `package.json` file and installing packages using `npm install`.
 
-## Requirements
+4. **Integration with npm CLI**: The plugin works based on official NPM APIs, providing up-to-date data about packages, versions, and dependencies.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Installation
 
-## Extension Settings
+To use the "NPM Package Viewer" plugin, follow these simple steps:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Clone repository.
+2. npm i / yarn.
+3. Press f5 to run vsc window with extension.
 
-For example:
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
